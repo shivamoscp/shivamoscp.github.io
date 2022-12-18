@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <style>
+    /* Add some style to the website */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      color: white;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    h1 {
+      color: #eee;
+      font-size: 3em;
+      margin: 20px 0;
+      text-shadow: 2px 2px 4px #000;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+    /* Add some animations to the website */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .fade-in {
+      animation: fadeIn 1s;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Portfolio</h1>
+    <p>I am Shivam DhingraI am an Ethical Hacker and Bug Bounty Hunter. Knon to Finding bugs in Whatsapp. Learning New Things Daily.</p>
+    <button onclick="displaySkills()">Click me to see my skills</button>
+    <ul id="skills"></ul>
+  </div>
+  <script>
+    // Add some interactivity to the website
+    function displaySkills() {
+      // Add some skills to the list
+      var skills = ["JavaScript", "HTML", "CSS", "Python", "Bash"];
+      var list = document.getElementById("skills");
+      skills.forEach(function(skill) {
+        var item = document.createElement("li");
+        item.classList.add("fade-in");
+        item.textContent = skill;
+        list.appendChild(item);
+      });
+    }
+  </script>
+</body>
+</html>
